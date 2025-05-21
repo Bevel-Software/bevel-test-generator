@@ -1,0 +1,1182 @@
+/* Theme Variables - 60/30/10 Color Rule */
+:root {
+	/* 60% - Primary/Background Colors */
+	--color-bg-primary: var(--vscode-sideBar-background, #1e1e1e);
+	--color-bg-secondary: var(--vscode-sideBarSectionHeader-background, #252525);
+	--color-bg-tertiary: var(--vscode-editor-inactiveSelectionBackground, #2d2d2d);
+	--color-bg-input: var(--vscode-input-background, #3c3c3c);
+	
+	/* 30% - Secondary/Content Colors */
+	--color-text-primary: var(--vscode-foreground, #cccccc);
+	--color-text-secondary: var(--vscode-descriptionForeground, #8a8a8a);
+	--color-text-title: var(--vscode-sideBarTitle-foreground, #ffffff);
+	--color-border: var(--vscode-sideBar-border, #303031);
+	--color-table-border: var(--vscode-panel-border, #444);
+	
+	/* 10% - Accent/Interactive Colors */
+	--color-accent-primary: var(--vscode-button-background, #007acc);
+	--color-accent-secondary: var(--vscode-button-secondaryBackground, #3c93d5);
+	--color-accent-success: #2ea043;
+	--color-accent-success-hover: #3fb950;
+	--color-accent-mock: #4d78cc;
+	--color-accent-real: #4d8b4d;
+	--color-accent-real-one: #2ea043;
+	--color-accent-fake: #8e44ad;
+	--color-error: var(--vscode-errorForeground, #f48771);
+	--color-focus: var(--vscode-focusBorder, #007fd4);
+	
+	/* Functional Colors */
+	--color-scrollbar: var(--vscode-scrollbarSlider-background);
+	--color-scrollbar-hover: var(--vscode-scrollbarSlider-hoverBackground);
+	--color-scrollbar-active: var(--vscode-scrollbarSlider-activeBackground);
+	--color-badge: var(--vscode-badge-background, #4d4d4d);
+	--color-badge-text: var(--vscode-badge-foreground, white);
+	--color-input-placeholder: var(--vscode-input-placeholderForeground, #818181);
+	
+	/* Spacing */
+	--space-xs: 4px;
+	--space-sm: 8px;
+	--space-md: 12px;
+	--space-lg: 16px;
+	
+	/* Typography */
+	--font-family-base: var(--vscode-font-family, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif);
+	--font-size-xs: 11px;
+	--font-size-sm: 12px;
+	--font-size-md: 13px;
+	--font-size-lg: 14px;
+	--font-family-code: var(--vscode-editor-font-family, monospace);
+	
+	/* Border Radius */
+	--border-radius-sm: 2px;
+	--border-radius-md: 3px;
+	--border-radius-lg: 4px;
+}
+
+/* Reset styles */
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: var(--font-family-base);
+	font-size: var(--font-size-md);
+	background-color: var(--color-bg-primary);
+	color: var(--color-text-primary);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	overflow-y: auto;
+}
+
+/* Layout */
+.container {
+	background-color: var(--color-bg-primary);
+	color: var(--color-text-primary);
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	font-size: var(--font-size-md);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	font-family: var(--font-family-base);
+}
+
+/* Section Components */
+.title {
+	color: var(--color-text-title);
+	font-weight: bold;
+	padding: 10px 16px;
+	font-size: var(--font-size-md);
+	background-color: var(--color-bg-secondary);
+	border-bottom: 1px solid var(--color-border);
+}
+
+.section {
+	margin-bottom: var(--space-sm);
+}
+
+.section-header {
+	background-color: var(--color-bg-secondary);
+	padding: var(--space-sm) var(--space-lg);
+	font-weight: bold;
+	font-size: var(--font-size-sm);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	border-top: 1px solid var(--color-border);
+	border-bottom: 1px solid var(--color-border);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.section-content {
+	padding: 10px 16px;
+}
+
+/* Target Function */
+.target-function {
+	background-color: var(--color-bg-tertiary);
+	padding: 12px 16px;
+	border-radius: var(--border-radius-md);
+	margin-bottom: var(--space-xs);
+	word-break: break-word;
+	font-size: var(--font-size-md);
+	overflow: hidden;
+	line-height: 1.5;
+	border-left: 3px solid var(--color-accent-primary);
+}
+
+.function-name, .file-path {
+	display: flex;
+	align-items: center;
+	margin-bottom: 4px;
+	line-height: 1.6;
+}
+
+.file-path {
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+
+.function-label, .file-label {
+	flex-shrink: 0;
+	font-weight: 600;
+	color: var(--color-text-secondary);
+	width: 70px;
+	font-family: var(--font-family-base);
+	font-size: var(--font-size-md);
+}
+
+.function-value {
+	color: var(--color-text-primary);
+	font-weight: 500;
+	font-family: var(--font-family-base);
+	font-size: var(--font-size-md);
+	cursor: pointer;
+	padding: 2px var(--space-xs);
+	border-radius: var(--border-radius-sm);
+	transition: background-color 0.2s ease;
+}
+
+.function-value:hover {
+	background-color: rgba(255, 140, 0, 0.2);
+}
+
+.file-value {
+	color: var(--color-text-secondary);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-family: var(--font-family-base);
+	font-size: var(--font-size-md);
+	cursor: pointer;
+	padding: 2px var(--space-xs);
+	border-radius: var(--border-radius-sm);
+	transition: background-color 0.2s ease;
+}
+
+.file-value:hover {
+	background-color: rgba(255, 140, 0, 0.2);
+}
+
+/* Dependency Components */
+.chevron {
+	cursor: pointer;
+	margin-right: 6px;
+	transition: transform 0.2s;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 14px;
+	height: 14px;
+	user-select: none;
+	font-size: 10px;
+	color: var(--color-text-primary);
+	opacity: 0.7;
+}
+
+.chevron.expanded {
+	transform: rotate(90deg);
+}
+
+.dependency-name {
+	flex-grow: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-left: 6px;
+	color: var(--color-text-primary) !important;
+	font-size: var(--font-size-md);
+	max-width: 100%;
+	display: inline-block;
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+.implementation-select {
+	background-color: var(--color-accent-real);
+	color: white;
+	padding: var(--space-xs) var(--space-sm);
+	border-radius: var(--border-radius-md);
+	border: none;
+	position: relative;
+	cursor: pointer;
+	appearance: none;
+	min-width: 90px;
+	max-width: 110px;
+	font-size: var(--font-size-sm);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+}
+
+.implementation-select.mock {
+	background-color: var(--color-accent-mock);
+}
+
+.implementation-select.use-real-one {
+	background-color: var(--color-accent-real-one);
+}
+
+.implementation-select.fake-object {
+	background-color: var(--color-accent-fake);
+}
+
+.implementation-select[value="Use Real One"],
+.implementation-select option[value="Use Real One"] {
+	background-color: var(--color-accent-real-one);
+}
+
+.implementation-select[value="Mock"],
+.implementation-select option[value="Mock"] {
+	background-color: var(--color-accent-mock);
+}
+
+.implementation-select[value="Fake Object"],
+.implementation-select option[value="Fake Object"] {
+	background-color: var(--color-accent-fake);
+}
+
+.implementation-select:hover {
+	opacity: 0.9;
+	outline: 1px solid white;
+}
+
+/* Icon Components */
+.settings-icon {
+	margin-left: var(--space-sm);
+	cursor: pointer;
+	font-size: var(--font-size-sm);
+	opacity: 0.8;
+	transition: transform 0.2s;
+}
+
+.settings-icon:hover {
+	opacity: 1;
+	transform: scale(1.2);
+}
+
+/* Buttons */
+.add-dependency-button {
+	background-color: var(--color-accent-success);
+	color: white;
+	border: none;
+	border-radius: var(--border-radius-lg);
+	padding: var(--space-xs) var(--space-sm);
+	font-size: var(--font-size-sm);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.add-dependency-button:hover {
+	background-color: var(--color-accent-success-hover);
+}
+
+.add-dependency-icon {
+	margin-right: var(--space-xs);
+	font-size: var(--font-size-lg);
+}
+
+.generate-button {
+	margin-top: var(--space-lg);
+	background-color: var(--color-accent-primary);
+	color: var(--vscode-button-foreground, white);
+	padding: var(--space-sm) var(--space-md);
+	border: none;
+	border-radius: var(--border-radius-sm);
+	cursor: pointer;
+	width: 100%;
+	font-size: var(--font-size-md);
+	font-weight: normal;
+	height: 32px;
+}
+
+.cancel-button {
+	background-color: #555;
+	color: white;
+	border: none;
+	border-radius: var(--border-radius-lg);
+	padding: 6px 12px;
+	font-size: var(--font-size-sm);
+	cursor: pointer;
+}
+
+.cancel-button:hover {
+	background-color: #666;
+}
+
+/* Form Components */
+.input {
+	background-color: var(--color-bg-input);
+	color: var(--color-text-primary);
+	border: 1px solid var(--vscode-input-border, #3c3c3c);
+	border-radius: var(--border-radius-sm);
+	padding: var(--space-xs) var(--space-sm);
+	width: 100%;
+	height: 24px;
+	margin-top: var(--space-xs);
+	font-size: var(--font-size-sm);
+	box-sizing: border-box;
+}
+
+/* Custom styling for select dropdowns */
+select.input {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='white'><polygon points='0,0 12,0 6,8'/></svg>");
+	background-repeat: no-repeat;
+	background-position: right 8px center;
+	padding-right: 24px; /* Extra padding to make space for the dropdown arrow */
+	cursor: pointer;
+}
+
+select.input:focus {
+	outline: 1.5px solid var(--color-focus);
+	border-color: var(--color-focus);
+}
+
+select.input option {
+	background-color: var(--color-bg-input);
+	color: var(--color-text-primary);
+	padding: var(--space-xs) var(--space-sm);
+}
+
+.label {
+	display: block;
+	margin-bottom: var(--space-xs);
+	font-size: var(--font-size-sm);
+	color: var(--color-text-primary);
+}
+
+.form-field {
+	margin-bottom: var(--space-md);
+}
+
+.input::placeholder {
+	color: var(--color-input-placeholder);
+	opacity: 0.6;
+}
+
+/* Status Components */
+.status-badge {
+	margin-top: 10px;
+	padding: 6px var(--space-sm);
+	background-color: var(--color-badge);
+	color: var(--color-badge-text);
+	border-radius: var(--border-radius-md);
+	font-size: var(--font-size-sm);
+	display: flex;
+	align-items: center;
+}
+
+.status-icon {
+	margin-right: 6px;
+	font-size: var(--font-size-lg);
+}
+
+/* Table Components */
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.table-header-cell {
+	text-align: left;
+	padding: 6px var(--space-xs);
+	font-size: var(--font-size-xs);
+	color: var(--color-text-primary);
+	border-bottom: 1px solid var(--color-table-border);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-weight: normal;
+}
+
+.table-cell {
+	padding: var(--space-sm) var(--space-xs);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	border-bottom: 1px solid var(--color-table-border);
+	font-size: var(--font-size-sm);
+	color: var(--color-text-primary);
+}
+
+.table-cell.align-right {
+	text-align: right;
+}
+
+.table-cell-flex {
+	display: flex;
+	align-items: center;
+	max-width: 100%;
+	padding: var(--space-sm) var(--space-xs);
+	border-bottom: 1px solid var(--color-table-border);
+	font-size: var(--font-size-sm);
+	color: var(--color-text-primary);
+}
+
+.flex-end {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: var(--space-xs);
+}
+
+/* Table Layout */
+.table-container {
+	overflow-x: auto;
+}
+
+.dependency-column {
+	width: 45%;
+}
+
+.type-column {
+	width: 20%;
+}
+
+.implementation-column {
+	width: 35%;
+	text-align: right;
+	position: relative;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-scrollbar);
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: var(--color-scrollbar-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+	background-color: var(--color-scrollbar-active);
+}
+
+::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
+
+/* Advanced Scrollbar Styling */
+body.scrollable,
+.scrollable,
+body.code-block-scrollable,
+.code-block-scrollable {
+	border-color: transparent;
+	transition: border-color 0.7s linear;
+}
+
+body:hover.scrollable,
+body:hover .scrollable,
+body:focus-within.scrollable,
+body:focus-within .scrollable,
+body:hover.code-block-scrollable,
+body:hover .code-block-scrollable,
+body:focus-within.code-block-scrollable,
+body:focus-within .code-block-scrollable {
+	border-color: var(--color-scrollbar);
+	transition: none;
+}
+
+.scrollable::-webkit-scrollbar-corner {
+	background-color: transparent !important;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+	background-color: transparent;
+	border-color: inherit;
+	border-right-style: inset;
+	border-right-width: calc(100vw + 100vh);
+	border-radius: unset !important;
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+	border-color: var(--color-scrollbar-hover);
+}
+
+.scrollable::-webkit-scrollbar-thumb:active {
+	border-color: var(--color-scrollbar-active);
+}
+
+/* Fix for WebKit scrollbar modifiers */
+@supports selector(::-webkit-scrollbar) {
+	html {
+		scrollbar-color: unset;
+	}
+}
+
+/* Code Block Scrollbar */
+.code-block-scrollable::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.code-block-scrollable::-webkit-scrollbar-thumb {
+	background-color: var(--color-scrollbar);
+	border-radius: 5px;
+	border: 2px solid transparent;
+	background-clip: content-box;
+}
+
+.code-block-scrollable::-webkit-scrollbar-thumb:hover {
+	background-color: var(--color-scrollbar-hover);
+}
+
+.code-block-scrollable::-webkit-scrollbar-thumb:active {
+	background-color: var(--color-scrollbar-active);
+}
+
+.code-block-scrollable::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
+
+/* Helper Classes */
+.muted-text {
+	font-size: var(--font-size-sm);
+	opacity: 0.8;
+}
+
+.error-text {
+	color: var(--color-error);
+	font-size: var(--font-size-sm);
+}
+
+.chevron-container {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 14px;
+	height: 14px;
+}
+
+/* Select Element Styling */
+select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding-right: 18px;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='white'><polygon points='0,0 12,0 6,8'/></svg>");
+	background-repeat: no-repeat;
+	background-position: right 6px center;
+	color: white;
+	text-align: left;
+	text-overflow: ellipsis;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+select option {
+	background-color: var(--vscode-dropdown-background, #2d2d2d);
+	color: var(--vscode-dropdown-foreground, white);
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Focus States */
+textarea:focus {
+	outline: 1.5px solid var(--color-focus);
+}
+
+vscode-button::part(control):focus {
+	outline: none;
+}
+
+/* Dropdown Styling */
+.dropdown-container {
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.dropdown-container label {
+	display: block;
+	color: var(--color-text-primary);
+	cursor: pointer;
+	font-size: var(--font-size-md);
+	line-height: normal;
+	margin-bottom: 2px;
+}
+
+vscode-dropdown::part(listbox) {
+	border-color: var(--color-scrollbar);
+	transition: none;
+	scrollbar-color: var(--color-scrollbar) transparent;
+}
+
+/* Input Icon Buttons */
+.input-icon-button {
+	cursor: pointer;
+	opacity: 0.65;
+}
+
+.input-icon-button:hover {
+	opacity: 1;
+}
+
+.input-icon-button.disabled {
+	cursor: not-allowed;
+	opacity: 0.4;
+}
+
+.input-icon-button.disabled:hover {
+	opacity: 0.4;
+}
+
+/* Context Mentions */
+.mention-context-textarea-highlight {
+	background-color: color-mix(in srgb, var(--color-badge-text) 30%, transparent);
+	border-radius: var(--border-radius-md);
+	box-shadow: 0 0 0 0.5px color-mix(in srgb, var(--color-badge-text) 30%, transparent);
+	color: transparent;
+}
+
+.mention-context-highlight {
+	background-color: color-mix(in srgb, var(--color-badge-text) 30%, transparent);
+	border-radius: var(--border-radius-md);
+}
+
+.mention-context-highlight-with-shadow {
+	background-color: color-mix(in srgb, var(--color-badge-text) 30%, transparent);
+	border-radius: var(--border-radius-md);
+	box-shadow: 0 0 0 0.5px color-mix(in srgb, var(--color-badge-text) 30%, transparent);
+}
+
+/* Search Components */
+.search-container {
+	position: relative;
+	margin-bottom: var(--space-md);
+	width: 100%;
+}
+
+.search-input-wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.search-icon {
+	position: absolute;
+	left: 10px;
+	color: #999;
+	font-size: var(--font-size-lg);
+}
+
+.search-input {
+	width: 100%;
+	padding: var(--space-sm) var(--space-sm) var(--space-sm) 30px;
+	border-radius: var(--border-radius-lg);
+	border: 1px solid #555;
+	background-color: #333;
+	color: #fff;
+	font-size: var(--font-size-md);
+}
+
+.search-input:focus {
+	outline: none;
+	border-color: var(--color-focus);
+	box-shadow: 0 0 0 1px var(--color-focus);
+}
+
+.search-results {
+	position: absolute;
+	width: 100%;
+	max-height: 200px;
+	overflow-y: auto;
+	background-color: #333;
+	border: 1px solid #555;
+	border-radius: var(--border-radius-lg);
+	z-index: 10;
+}
+
+.search-result-item {
+	padding: var(--space-sm) 10px;
+	cursor: pointer;
+	border-bottom: 1px solid #444;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+/* Add relevance indicator on the left side of each search result */
+.search-result-item::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 3px;
+	background-color: var(--color-accent-primary);
+	opacity: 0.3;
+}
+
+/* Higher opacity means more relevant match */
+.search-result-item:nth-child(1)::before { opacity: 1; }
+.search-result-item:nth-child(2)::before { opacity: 0.8; }
+.search-result-item:nth-child(3)::before { opacity: 0.6; }
+.search-result-item:nth-child(4)::before { opacity: 0.4; }
+.search-result-item:nth-child(5)::before { opacity: 0.3; }
+
+.search-result-item:hover {
+	background-color: #444;
+}
+
+.search-result-icon {
+	margin-right: 10px;
+	color: var(--color-accent-primary);
+	font-size: var(--font-size-lg);
+}
+
+.search-result-name {
+	font-size: var(--font-size-lg);
+	font-weight: 500;
+	color: white;
+}
+
+.search-result-details {
+	font-size: var(--font-size-xs);
+	color: #999;
+	margin-top: 2px;
+}
+
+.searching-status {
+	padding: 5px 0;
+	font-size: var(--font-size-sm);
+}
+
+.search-actions-container {
+	margin-top: var(--space-sm);
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* Dependency Clickable Elements */
+.dependency-name-clickable {
+	transition: background-color 0.2s ease;
+}
+
+.dependency-name-clickable:hover {
+	background-color: rgba(255, 140, 0, 0.2);
+}
+
+.clickable-indicator {
+	font-size: 10px;
+	color: #FF8C00;
+	margin-right: var(--space-xs);
+}
+
+.dependency-clickable {
+	color: #fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+	padding-left: 6px;
+	font-size: var(--font-size-md);
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: var(--border-radius-sm);
+	padding: 2px var(--space-xs);
+	margin-left: -4px;
+	display: flex;
+	align-items: center;
+	transition: background-color 0.2s ease;
+}
+
+/* Add orange hover effect to indicate clickability */
+.dependency-clickable:hover {
+	background-color: rgba(255, 140, 0, 0.2);
+}
+
+.dependency-nonclickable {
+	color: #fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+	padding-left: 6px;
+	font-size: var(--font-size-md);
+	cursor: default;
+	text-decoration: none;
+	border-radius: var(--border-radius-sm);
+	padding: 2px var(--space-xs);
+	margin-left: -4px;
+	display: flex;
+	align-items: center;
+}
+
+/* Codicon Integration */
+.codicon {
+	font-size: inherit;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+}
+
+.add-dependency-icon.codicon {
+	margin-right: var(--space-xs);
+	font-size: var(--font-size-lg);
+}
+
+.search-icon.codicon {
+	position: absolute;
+	left: 10px;
+	color: #999;
+	font-size: var(--font-size-md);
+}
+
+.search-result-icon.codicon {
+	margin-right: 10px;
+	color: var(--color-accent-primary);
+	font-size: var(--font-size-lg);
+}
+
+.clickable-indicator.codicon {
+	font-size: 12px;
+	color: #6495ED;
+	margin-right: var(--space-xs);
+}
+
+.status-icon.codicon {
+	margin-right: 6px;
+	font-size: var(--font-size-md);
+}
+
+.settings-icon.codicon {
+	margin-left: var(--space-sm);
+	cursor: pointer;
+	font-size: var(--font-size-sm);
+	opacity: 0.8;
+	transition: transform 0.2s;
+}
+
+.settings-icon.codicon:hover {
+	opacity: 1;
+	transform: scale(1.2);
+}
+
+/* Function row styles for dependency grouping */
+.function-row {
+	background-color: var(--color-background-secondary);
+}
+
+.function-indented {
+	padding-left: 20px !important;
+}
+
+.function-item {
+	display: flex;
+	align-items: center;
+	padding: 4px 8px;
+	cursor: pointer;
+	border-radius: 4px;
+	width: 100%;
+}
+
+.function-item:hover {
+	background-color: var(--color-background-tertiary);
+}
+
+.function-icon {
+	margin-right: 8px;
+	color: var(--color-text-secondary);
+}
+
+.function-name {
+	flex-grow: 1;
+	font-size: var(--font-size-sm);
+	color: var(--color-text-primary);
+}
+
+.function-type {
+	font-size: var(--font-size-xs);
+	color: var(--color-text-secondary);
+	margin-left: 8px;
+}
+
+/* Hierarchical Dependency Tree Styles */
+.child-node-row {
+	background-color: rgba(255, 255, 255, 0.02);
+}
+
+.expand-toggle {
+	cursor: pointer;
+	margin-right: 8px;
+	color: var(--color-text-secondary);
+	display: inline-flex;
+	width: 16px;
+	height: 16px;
+	align-items: center;
+	justify-content: center;
+}
+
+.expand-toggle:hover {
+	color: var(--color-text-primary);
+}
+
+.node-type-icon {
+	margin-right: 8px;
+	color: var(--color-text-secondary);
+	font-size: var(--font-size-md);
+}
+
+.node-name {
+	margin-left: 4px;
+}
+
+/* Alternate row colors for better visibility */
+.child-node-row:nth-child(odd) {
+	background-color: rgba(255, 255, 255, 0.03);
+}
+
+.child-node-row:nth-child(even) {
+	background-color: rgba(255, 255, 255, 0.01);
+}
+
+.implementation-select.mixed {
+	background-color: #8758b9;
+}
+
+.implementation-select:disabled {
+	opacity: 0.7;
+	cursor: not-allowed;
+}
+
+/* Hover state for rows */
+tr:hover .table-cell,
+tr:hover .table-cell-flex {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Add styling for textarea if it doesn't exist */
+.textarea {
+	width: 100%;
+	padding: var(--space-xs) var(--space-sm);
+	font-size: var(--font-size-sm);
+	border: 1px solid var(--vscode-input-border, #3c3c3c);
+	border-radius: var(--border-radius-sm);
+	background-color: var(--color-bg-input);
+	color: var(--color-text-primary);
+	margin-top: var(--space-xs);
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+.textarea:focus {
+	outline: none;
+	border-color: var(--color-accent-primary);
+}
+
+.delete-icon {
+	margin-left: var(--space-sm);
+	cursor: pointer;
+	font-size: var(--font-size-sm);
+	opacity: 0.8;
+	transition: all 0.2s;
+	color: #e05252;
+}
+
+.delete-icon:hover {
+	opacity: 1;
+	transform: scale(1.2);
+	color: #ff6b6b;
+}
+
+.implementation-value {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: white;
+	padding: var(--space-xs) var(--space-sm);
+	border-radius: var(--border-radius-md);
+	min-width: 120px;
+	max-width: 150px;
+	font-size: var(--font-size-sm);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Info Tooltip */
+.info-tooltip-container {
+	position: relative;
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+.info-icon {
+	color: var(--color-text-secondary);
+	cursor: help;
+	font-size: var(--font-size-sm);
+	opacity: 0.8;
+}
+
+.info-icon:hover {
+	opacity: 1;
+}
+
+.info-tooltip {
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 280px;
+	background-color: var(--color-bg-secondary);
+	color: var(--color-text-primary);
+	text-align: left;
+	border-radius: var(--border-radius-md);
+	padding: 12px;
+	z-index: 100;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+	font-size: var(--font-size-sm);
+	line-height: 1.4;
+	transform: translateX(0);
+	opacity: 0;
+	transition: opacity 0.2s ease;
+	white-space: normal;
+	overflow-wrap: break-word;
+	max-width: 90vw; /* Ensure it doesn't overflow the sidebar width */
+	max-height: 80vh; /* Ensure it doesn't overflow the sidebar height */
+	overflow: auto;
+	border: 1px solid var(--color-border);
+	text-transform: none; /* Ensure text is not transformed to uppercase */
+}
+
+.info-tooltip-container:hover .info-tooltip {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Add styles for the connection warning */
+.connection-warning {
+	background-color: var(--vscode-editorError-background, #5a1d1d);
+	color: var(--vscode-editor-foreground);
+	padding: 15px;
+	margin-bottom: 15px;
+	border-radius: 4px;
+}
+
+.warning-content {
+	display: flex;
+	align-items: flex-start;
+}
+
+.warning-icon {
+	font-size: 24px;
+	margin-right: 15px;
+}
+
+.warning-message {
+	flex: 1;
+}
+
+.warning-message h3 {
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.warning-message p {
+	margin-top: 0;
+	margin-bottom: 12px;
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+.warning-message .button-container {
+	display: flex;
+	margin-top: 8px;
+	flex-wrap: wrap;
+}
+
+.try-again-button {
+	background-color: var(--vscode-button-secondaryBackground, #3c3c3c);
+	color: var(--vscode-button-secondaryForeground, #ffffff);
+	border: none;
+	padding: 6px 12px;
+	border-radius: 2px;
+	cursor: pointer;
+	font-size: 12px;
+	margin-left: 8px;
+}
+
+.try-again-button:hover {
+	background-color: var(--vscode-button-secondaryHoverBackground, #45494e);
+}
+
+.install-button {
+	background-color: var(--vscode-button-background);
+	color: var(--vscode-button-foreground);
+	border: none;
+	padding: 6px 12px;
+	border-radius: 2px;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.install-button:hover {
+	background-color: var(--vscode-button-hoverBackground);
+}
+
+/* Search Target Function Button */
+.search-target-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: var(--space-xs) var(--space-sm);
+	border-radius: var(--border-radius-md);
+	border: 1px solid var(--color-border);
+	background-color: var(--vscode-button-background);
+	color: var(--vscode-button-foreground);
+	font-size: var(--font-size-sm);
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.search-target-button:hover {
+	background-color: var(--vscode-button-hoverBackground);
+}
+
+.search-target-icon {
+	margin-right: var(--space-xs);
+}

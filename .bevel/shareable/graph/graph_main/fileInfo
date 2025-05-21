@@ -1,0 +1,515 @@
+{
+  "fileInfos" : [ {
+    "path" : "debug.js",
+    "modificationInfo" : {
+      "contentHash" : -1176719312,
+      "lastModified" : 1746783665205
+    },
+    "linesOfCode" : 1
+  }, {
+    "path" : "esbuild.js",
+    "modificationInfo" : {
+      "contentHash" : 395553150,
+      "lastModified" : 1747831830112
+    },
+    "linesOfCode" : 58
+  }, {
+    "path" : "jest.config.js",
+    "modificationInfo" : {
+      "contentHash" : -123055402,
+      "lastModified" : 1746694863877
+    },
+    "linesOfCode" : 15
+  }, {
+    "path" : "sidebar/scripts/build-react-no-split.js",
+    "modificationInfo" : {
+      "contentHash" : -1211536264,
+      "lastModified" : 1746694863902
+    },
+    "linesOfCode" : 116
+  }, {
+    "path" : "sidebar/src/App.tsx",
+    "modificationInfo" : {
+      "contentHash" : 1231095021,
+      "lastModified" : 1747831830119
+    },
+    "linesOfCode" : 182
+  }, {
+    "path" : "sidebar/src/components/DependenciesSection.tsx",
+    "modificationInfo" : {
+      "contentHash" : -1956323702,
+      "lastModified" : 1747831830119
+    },
+    "linesOfCode" : 107
+  }, {
+    "path" : "sidebar/src/components/DependencyNodeItem.tsx",
+    "modificationInfo" : {
+      "contentHash" : 764445723,
+      "lastModified" : 1747831830120
+    },
+    "linesOfCode" : 69
+  }, {
+    "path" : "sidebar/src/components/HierarchicalDependencyItem.tsx",
+    "modificationInfo" : {
+      "contentHash" : -1498724547,
+      "lastModified" : 1747831830120
+    },
+    "linesOfCode" : 98
+  }, {
+    "path" : "sidebar/src/components/SearchContainer.tsx",
+    "modificationInfo" : {
+      "contentHash" : 1351146906,
+      "lastModified" : 1747831830120
+    },
+    "linesOfCode" : 104
+  }, {
+    "path" : "sidebar/src/components/TargetFunctionSearchContainer.tsx",
+    "modificationInfo" : {
+      "contentHash" : 1066087251,
+      "lastModified" : 1747831830120
+    },
+    "linesOfCode" : 101
+  }, {
+    "path" : "sidebar/src/components/TargetFunctionSection.tsx",
+    "modificationInfo" : {
+      "contentHash" : -552066120,
+      "lastModified" : 1747831830121
+    },
+    "linesOfCode" : 85
+  }, {
+    "path" : "sidebar/src/components/TestConfigurationSection.tsx",
+    "modificationInfo" : {
+      "contentHash" : -75553980,
+      "lastModified" : 1747832418310
+    },
+    "linesOfCode" : 100
+  }, {
+    "path" : "sidebar/src/components/common/Codicon.tsx",
+    "modificationInfo" : {
+      "contentHash" : 539803356,
+      "lastModified" : 1747831830121
+    },
+    "linesOfCode" : 23
+  }, {
+    "path" : "sidebar/src/components/common/ConnectionWarning.tsx",
+    "modificationInfo" : {
+      "contentHash" : -876184952,
+      "lastModified" : 1747831830121
+    },
+    "linesOfCode" : 113
+  }, {
+    "path" : "sidebar/src/components/common/StatusBadge.tsx",
+    "modificationInfo" : {
+      "contentHash" : 387446356,
+      "lastModified" : 1747831830122
+    },
+    "linesOfCode" : 26
+  }, {
+    "path" : "sidebar/src/hooks/useDependencies.ts",
+    "modificationInfo" : {
+      "contentHash" : 161959098,
+      "lastModified" : 1747831830122
+    },
+    "linesOfCode" : 471
+  }, {
+    "path" : "sidebar/src/hooks/useMessageHandler.ts",
+    "modificationInfo" : {
+      "contentHash" : 499495834,
+      "lastModified" : 1747831830122
+    },
+    "linesOfCode" : 177
+  }, {
+    "path" : "sidebar/src/hooks/useNodeDetails.ts",
+    "modificationInfo" : {
+      "contentHash" : 1090212829,
+      "lastModified" : 1747831830123
+    },
+    "linesOfCode" : 104
+  }, {
+    "path" : "sidebar/src/hooks/useSearch.ts",
+    "modificationInfo" : {
+      "contentHash" : -1279926427,
+      "lastModified" : 1747831830123
+    },
+    "linesOfCode" : 86
+  }, {
+    "path" : "sidebar/src/hooks/useTargetFunctionSearch.ts",
+    "modificationInfo" : {
+      "contentHash" : 2064955894,
+      "lastModified" : 1747831830123
+    },
+    "linesOfCode" : 92
+  }, {
+    "path" : "sidebar/src/hooks/useTestGeneration.ts",
+    "modificationInfo" : {
+      "contentHash" : -1009781919,
+      "lastModified" : 1747831830124
+    },
+    "linesOfCode" : 47
+  }, {
+    "path" : "sidebar/src/index.tsx",
+    "modificationInfo" : {
+      "contentHash" : 1394902340,
+      "lastModified" : 1746694863903
+    },
+    "linesOfCode" : 18
+  }, {
+    "path" : "sidebar/src/react-app-env.d.ts",
+    "modificationInfo" : {
+      "contentHash" : -261311583,
+      "lastModified" : 1746694863903
+    },
+    "linesOfCode" : 1
+  }, {
+    "path" : "sidebar/src/reportWebVitals.ts",
+    "modificationInfo" : {
+      "contentHash" : 1602206229,
+      "lastModified" : 1746694863903
+    },
+    "linesOfCode" : 15
+  }, {
+    "path" : "sidebar/src/setupTests.ts",
+    "modificationInfo" : {
+      "contentHash" : -771524605,
+      "lastModified" : 1746694863903
+    },
+    "linesOfCode" : 5
+  }, {
+    "path" : "sidebar/src/types.ts",
+    "modificationInfo" : {
+      "contentHash" : 461676172,
+      "lastModified" : 1747831830124
+    },
+    "linesOfCode" : 25
+  }, {
+    "path" : "sidebar/src/utils/dependencyHelpers.ts",
+    "modificationInfo" : {
+      "contentHash" : -746898843,
+      "lastModified" : 1747831830125
+    },
+    "linesOfCode" : 43
+  }, {
+    "path" : "sidebar/src/utils/formatters.ts",
+    "modificationInfo" : {
+      "contentHash" : 1407967386,
+      "lastModified" : 1747831830125
+    },
+    "linesOfCode" : 24
+  }, {
+    "path" : "sidebar/src/utils/generatePrompt.ts",
+    "modificationInfo" : {
+      "contentHash" : -6460668,
+      "lastModified" : 1747831830125
+    },
+    "linesOfCode" : 127
+  }, {
+    "path" : "sidebar/src/utils/vscStyles.ts",
+    "modificationInfo" : {
+      "contentHash" : 437285727,
+      "lastModified" : 1746694863903
+    },
+    "linesOfCode" : 41
+  }, {
+    "path" : "sidebar/src/utils/vscode.ts",
+    "modificationInfo" : {
+      "contentHash" : 1836493828,
+      "lastModified" : 1747831830126
+    },
+    "linesOfCode" : 192
+  }, {
+    "path" : "src/bevel/BevelFilesPathResolver.ts",
+    "modificationInfo" : {
+      "contentHash" : -2088118193,
+      "lastModified" : 1746694863903
+    },
+    "linesOfCode" : 53
+  }, {
+    "path" : "src/bevel/SupportedFileExtensions.ts",
+    "modificationInfo" : {
+      "contentHash" : 1649747402,
+      "lastModified" : 1746694863903
+    },
+    "linesOfCode" : 46
+  }, {
+    "path" : "src/commands/CommandManager.ts",
+    "modificationInfo" : {
+      "contentHash" : 1492020338,
+      "lastModified" : 1747832109220
+    },
+    "linesOfCode" : 16
+  }, {
+    "path" : "src/domain/WebviewCommunicationInterface.ts",
+    "modificationInfo" : {
+      "contentHash" : -568312436,
+      "lastModified" : 1746694863903
+    },
+    "linesOfCode" : 17
+  }, {
+    "path" : "src/domain/WebviewMessage.ts",
+    "modificationInfo" : {
+      "contentHash" : 1369231630,
+      "lastModified" : 1746694863904
+    },
+    "linesOfCode" : 22
+  }, {
+    "path" : "src/extension.ts",
+    "modificationInfo" : {
+      "contentHash" : 1749686759,
+      "lastModified" : 1747831830126
+    },
+    "linesOfCode" : 87
+  }, {
+    "path" : "src/jest.config.js",
+    "modificationInfo" : {
+      "contentHash" : 379818178,
+      "lastModified" : 1746694863904
+    },
+    "linesOfCode" : 13
+  }, {
+    "path" : "src/providers/BevelCodeLensProvider.ts",
+    "modificationInfo" : {
+      "contentHash" : 1650445216,
+      "lastModified" : 1747831830127
+    },
+    "linesOfCode" : 526
+  }, {
+    "path" : "src/providers/TabWebviewProvider.ts",
+    "modificationInfo" : {
+      "contentHash" : -295420614,
+      "lastModified" : 1747831830127
+    },
+    "linesOfCode" : 227
+  }, {
+    "path" : "src/providers/codelens/index.ts",
+    "modificationInfo" : {
+      "contentHash" : -131166617,
+      "lastModified" : 1747831830127
+    },
+    "linesOfCode" : 8
+  }, {
+    "path" : "src/providers/sidebar/NodeCodeExtractor.ts",
+    "modificationInfo" : {
+      "contentHash" : 1016070272,
+      "lastModified" : 1747831830127
+    },
+    "linesOfCode" : 84
+  }, {
+    "path" : "src/providers/sidebar/PromptGenerator.ts",
+    "modificationInfo" : {
+      "contentHash" : -557906708,
+      "lastModified" : 1747833098617
+    },
+    "linesOfCode" : 137
+  }, {
+    "path" : "src/providers/sidebar/SidebarProvider.ts",
+    "modificationInfo" : {
+      "contentHash" : -358577238,
+      "lastModified" : 1747832133866
+    },
+    "linesOfCode" : 224
+  }, {
+    "path" : "src/providers/sidebar/WebviewHtmlGenerator.ts",
+    "modificationInfo" : {
+      "contentHash" : 1693311209,
+      "lastModified" : 1747831830128
+    },
+    "linesOfCode" : 63
+  }, {
+    "path" : "src/providers/sidebar/handlers/ConnectionHandler.ts",
+    "modificationInfo" : {
+      "contentHash" : -823624524,
+      "lastModified" : 1747831830128
+    },
+    "linesOfCode" : 45
+  }, {
+    "path" : "src/providers/sidebar/handlers/DependencyHandler.ts",
+    "modificationInfo" : {
+      "contentHash" : -1010726741,
+      "lastModified" : 1747831830129
+    },
+    "linesOfCode" : 63
+  }, {
+    "path" : "src/providers/sidebar/handlers/HighlightHandler.ts",
+    "modificationInfo" : {
+      "contentHash" : -6115876,
+      "lastModified" : 1747831830129
+    },
+    "linesOfCode" : 67
+  }, {
+    "path" : "src/providers/sidebar/handlers/NodeHandler.ts",
+    "modificationInfo" : {
+      "contentHash" : 698863234,
+      "lastModified" : 1747831830129
+    },
+    "linesOfCode" : 253
+  }, {
+    "path" : "src/providers/sidebar/handlers/PromptHandler.ts",
+    "modificationInfo" : {
+      "contentHash" : -581518696,
+      "lastModified" : 1747831830130
+    },
+    "linesOfCode" : 43
+  }, {
+    "path" : "src/providers/sidebar/handlers/SearchHandler.ts",
+    "modificationInfo" : {
+      "contentHash" : 1810376035,
+      "lastModified" : 1747831830130
+    },
+    "linesOfCode" : 84
+  }, {
+    "path" : "src/providers/sidebar/index.ts",
+    "modificationInfo" : {
+      "contentHash" : 482030910,
+      "lastModified" : 1747831830130
+    },
+    "linesOfCode" : 20
+  }, {
+    "path" : "src/providers/sidebar/services/DecorationService.ts",
+    "modificationInfo" : {
+      "contentHash" : -1431950732,
+      "lastModified" : 1747831830130
+    },
+    "linesOfCode" : 120
+  }, {
+    "path" : "src/providers/sidebar/services/MessageRouter.ts",
+    "modificationInfo" : {
+      "contentHash" : -1192567950,
+      "lastModified" : 1747831830130
+    },
+    "linesOfCode" : 214
+  }, {
+    "path" : "src/providers/sidebar/services/WebviewSetupService.ts",
+    "modificationInfo" : {
+      "contentHash" : 1996908136,
+      "lastModified" : 1747831830130
+    },
+    "linesOfCode" : 54
+  }, {
+    "path" : "src/providers/sidebar/types.ts",
+    "modificationInfo" : {
+      "contentHash" : 921201973,
+      "lastModified" : 1747831830131
+    },
+    "linesOfCode" : 35
+  }, {
+    "path" : "src/providers/tab/index.ts",
+    "modificationInfo" : {
+      "contentHash" : -1950501370,
+      "lastModified" : 1747831830131
+    },
+    "linesOfCode" : 7
+  }, {
+    "path" : "src/utils/BevelConnectionChecker.ts",
+    "modificationInfo" : {
+      "contentHash" : -482575338,
+      "lastModified" : 1747831830131
+    },
+    "linesOfCode" : 105
+  }, {
+    "path" : "src/utils/DependencyExtractor.ts",
+    "modificationInfo" : {
+      "contentHash" : 1152111370,
+      "lastModified" : 1747831830131
+    },
+    "linesOfCode" : 330
+  }, {
+    "path" : "src/utils/Logger.ts",
+    "modificationInfo" : {
+      "contentHash" : -1337369654,
+      "lastModified" : 1746694863904
+    },
+    "linesOfCode" : 14
+  }, {
+    "path" : "src/utils/ServiceManager.ts",
+    "modificationInfo" : {
+      "contentHash" : -5591562,
+      "lastModified" : 1747831830132
+    },
+    "linesOfCode" : 32
+  }, {
+    "path" : "src/utils/getNonce.ts",
+    "modificationInfo" : {
+      "contentHash" : 1791969076,
+      "lastModified" : 1746694863904
+    },
+    "linesOfCode" : 8
+  }, {
+    "path" : "src/utils/getUri.ts",
+    "modificationInfo" : {
+      "contentHash" : -147989537,
+      "lastModified" : 1746694863904
+    },
+    "linesOfCode" : 15
+  }, {
+    "path" : "src/utils/hover.ts",
+    "modificationInfo" : {
+      "contentHash" : -1537914905,
+      "lastModified" : 1746694863904
+    },
+    "linesOfCode" : 53
+  }, {
+    "path" : "src/webview-communication/WebviewCommunication.ts",
+    "modificationInfo" : {
+      "contentHash" : -1937879269,
+      "lastModified" : 1747831830132
+    },
+    "linesOfCode" : 182
+  }, {
+    "path" : "tab-webview/scripts/build-react-no-split.js",
+    "modificationInfo" : {
+      "contentHash" : -1211536264,
+      "lastModified" : 1746694863905
+    },
+    "linesOfCode" : 116
+  }, {
+    "path" : "tab-webview/src/App.tsx",
+    "modificationInfo" : {
+      "contentHash" : 1960609781,
+      "lastModified" : 1747831830134
+    },
+    "linesOfCode" : 9
+  }, {
+    "path" : "tab-webview/src/index.tsx",
+    "modificationInfo" : {
+      "contentHash" : 1394902340,
+      "lastModified" : 1747831830135
+    },
+    "linesOfCode" : 18
+  }, {
+    "path" : "tab-webview/src/react-app-env.d.ts",
+    "modificationInfo" : {
+      "contentHash" : -261311583,
+      "lastModified" : 1746694863906
+    },
+    "linesOfCode" : 1
+  }, {
+    "path" : "tab-webview/src/reportWebVitals.ts",
+    "modificationInfo" : {
+      "contentHash" : 1602206229,
+      "lastModified" : 1746694863906
+    },
+    "linesOfCode" : 15
+  }, {
+    "path" : "tab-webview/src/setupTests.ts",
+    "modificationInfo" : {
+      "contentHash" : -771524605,
+      "lastModified" : 1746694863906
+    },
+    "linesOfCode" : 5
+  }, {
+    "path" : "tab-webview/src/utils/vscStyles.ts",
+    "modificationInfo" : {
+      "contentHash" : 437285727,
+      "lastModified" : 1746694863906
+    },
+    "linesOfCode" : 41
+  }, {
+    "path" : "tab-webview/src/utils/vscode.ts",
+    "modificationInfo" : {
+      "contentHash" : -1337826760,
+      "lastModified" : 1747055185327
+    },
+    "linesOfCode" : 158
+  } ],
+  "appVersion" : "1.2.3"
+}

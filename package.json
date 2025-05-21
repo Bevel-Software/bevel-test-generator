@@ -1,0 +1,110 @@
+{
+  "name": "bevel-test-generator",
+  "publisher": "bevel-software",
+  "displayName": "Characterization Test Prompt Generator for AI Assistants",
+  "icon": "media/bevel-test-logo.png",
+  "repository": "https://github.com/example/bevel-test-generator",
+  "description": "Generate effective prompts for AI coding assistants like Cursor, GitHub Copilot, and others to create characterization tests",
+  "version": "1.0.5",
+  "private": "true",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bevel-test-generator.exampleCommand",
+        "title": "Test Prompt Generator: Example Command"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "test-prompt-generator-sidebar",
+          "title": "Test Prompt Gen",
+          "icon": "media/bevel-test-logo.png"
+        }
+      ]
+    },
+    "views": {
+      "test-prompt-generator-sidebar": [
+        {
+          "id": "bevel-test-generator.sidebar",
+          "name": "Test Prompt Generator",
+          "type": "webview"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Test Prompt Generator",
+      "properties": {}
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run build:sidebar && npm run build:tab && npm run check-types && npm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p ./tsconfig.test.json --outDir testOut",
+    "watch-tests": "tsc -p . -w --outDir testOut",
+    "pretest": "npm run compile-tests && npm run build:extension && npm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "install:all": "npm install && cd tab-webview && npm install && cd ../sidebar && npm install",
+    "build:all": "npm run build:extension && npm run build:sidebar && npm run build:tab",
+    "build:extension": "npm run check-types && node esbuild.js",
+    "build:tab": "cd tab-webview && npm run build",
+    "build:sidebar": "cd sidebar && npm run build",
+    "publish:marketplace": "vsce publish && ovsx publish",
+    "publish:marketplace:prerelease": "vsce publish --pre-release && ovsx publish --pre-release",
+    "mcp:start": "ts-node src/mcp/server/run.ts",
+    "branch-changed": "npm install:all && npm build:all"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@types/jest": "^27.5.2",
+    "@types/jest-axe": "^3.5.9",
+    "@types/node": "20.x",
+    "@types/uuid": "^10.0.0",
+    "@types/vscode": "^1.84.0",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vscode/test-cli": "^0.0.10",
+    "esbuild": "^0.25.4",
+    "eslint": "^9.11.1",
+    "generate-license-file": "^4.0.0",
+    "jest": "^29.7.0",
+    "jest-axe": "^9.0.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@bevel-software/bevel-ts-client": "^1.2.0",
+    "@vscode/codicons": "^0.0.36",
+    "delay": "^6.0.0",
+    "fuse.js": "^7.1.0",
+    "uuid": "^11.1.0"
+  },
+  "files": [
+    "out",
+    "tab-webview/build",
+    "sidebar/build",
+    "node_modules/@vscode/codicons/dist/**",
+    "media",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES"
+  ]
+}

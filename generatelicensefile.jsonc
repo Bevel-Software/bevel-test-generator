@@ -1,0 +1,9 @@
+{
+  // Default config - can be passed in via config and/or CLI
+  "inputs": ["./package.json", "./sidebar/package.json", "./tab-webview/package.json"],
+  "output": "./NOTICE",
+  "lineEnding": "lf",
+
+  // Omit the version number in the output file
+  "omitVersion": false
+}
