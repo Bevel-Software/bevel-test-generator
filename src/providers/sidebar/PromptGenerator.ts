@@ -66,6 +66,8 @@ export class PromptGenerator {
 			
 			if (mockedDeps.length > 0) {
 				prompt += `\n### Mocked Dependencies:\n`;
+				prompt += `Mock: Use the framework specified by user to create a lightweight mock of the dependency with fake responses\n`;
+				prompt += `Fake Object: Create a simple implementation of the specified interface or class with custom behavior\n\n`;
 				for (const dep of mockedDeps) {
 					prompt += `- ${dep.name} (filepath: ${dep.filePath || 'unknown'}): ${dep.implementation}\n`;
 				}

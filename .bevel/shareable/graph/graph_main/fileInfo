@@ -37,8 +37,8 @@
   }, {
     "path" : "sidebar/src/components/DependenciesSection.tsx",
     "modificationInfo" : {
-      "contentHash" : -1956323702,
-      "lastModified" : 1747831830119
+      "contentHash" : 57863325,
+      "lastModified" : 1747835029083
     },
     "linesOfCode" : 107
   }, {
@@ -296,10 +296,10 @@
   }, {
     "path" : "src/providers/sidebar/PromptGenerator.ts",
     "modificationInfo" : {
-      "contentHash" : -557906708,
-      "lastModified" : 1747833098617
+      "contentHash" : 465650820,
+      "lastModified" : 1747835095839
     },
-    "linesOfCode" : 137
+    "linesOfCode" : 139
   }, {
     "path" : "src/providers/sidebar/SidebarProvider.ts",
     "modificationInfo" : {

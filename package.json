@@ -3,7 +3,7 @@
   "publisher": "bevel-software",
   "displayName": "Characterization Test Prompt Generator for AI Assistants",
   "icon": "media/bevel-test-logo.png",
-  "repository": "https://github.com/example/bevel-test-generator",
+  "repository": "https://github.com/bevel-software/bevel-test-generator",
   "description": "Generate effective prompts for AI coding assistants like Cursor, GitHub Copilot, and others to create characterization tests",
   "version": "1.0.5",
   "private": "true",

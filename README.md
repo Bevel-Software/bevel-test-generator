@@ -1,5 +1,9 @@
 # Characterization Test Prompt Generator for Cursor, Copilot, etc.
 
+**Author**: Bevel Software (Bevelites GmbH)
+
+Built using [@bevel-software/bevel-ts-client](https://www.npmjs.com/package/@bevel-software/bevel-ts-client)
+
 ## Overview
 
 This extension helps developers create effective prompts for AI coding assistants like Cursor, GitHub Copilot, and others to generate characterization tests. By automatically extracting and organizing code dependencies, it enables more precise test creation for legacy or complex codebases without modifying existing functionality.
@@ -10,6 +14,8 @@ This extension helps developers create effective prompts for AI coding assistant
 - Automatically identify and extract code dependencies
 - Organize dependencies for effective prompt creation
 - Support for mocking or using real dependencies in test generation
+
+![Dependency Extraction Demo](https://i.imgur.com/y9oaLHk.gif)
 
 ### 🤖 AI-Ready Prompt Generation
 - Create structured prompts for AI assistants to generate tests
@@ -82,7 +88,8 @@ See the LICENSE file for details.
 ## Feedback and Support
 
 For issues, questions, or feedback regarding this dependency extractor, please:
-- Contact support at juan@bevel.software
+- Contact us at juan@bevel.software
+- Join our Discord community: [Bevel Discord](https://discord.gg/jJWEpkjX)
 
 ---
 

@@ -74,9 +74,9 @@ const DependenciesSection: React.FC<DependenciesSectionProps> = ({
                     <div className="info-tooltip-container">
                       <Codicon name="info" className="info-icon" />
                       <div className="info-tooltip">
-                        <strong>Mock</strong>: Create a lightweight mock of the dependency with fake responses<br/><br/>
+                        <strong>Mock</strong>: Use the framework specified by user to create a lightweight mock of the dependency with fake responses<br/><br/>
                         <strong>Use Real One</strong>: Use the actual implementation of the dependency<br/><br/>
-                        <strong>Fake Object</strong>: Create a more sophisticated fake implementation with custom behavior
+                        <strong>Fake Object</strong>: Create a simple implementation of the specified interface or class with custom behavior
                       </div>
                     </div>
                   </th>

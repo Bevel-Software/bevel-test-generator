@@ -12,9 +12,9 @@ This feature allows you to extract the dependencies of any code function using t
 
 ## Implementation Types
 
-- **Mock**: Create a lightweight mock of the dependency with fake responses
+- **Mock**: Use the framework specified by user to create a lightweight mock of the dependency with fake responses
 - **Real**: Use the actual implementation of the dependency
-- **Fake**: Create a more sophisticated fake implementation with custom behavior
+- **Fake**: Create a simple implementation of the specified interface or class with custom behavior
 
 ## Technical Details
 
